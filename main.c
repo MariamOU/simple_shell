@@ -9,13 +9,13 @@
 
 int main(int ac, char **av)
 {
-(void)ac;
-(voi)av;
-char *line = NULL;
+char *line;
 size_t line_length = 0;
 ssize_t num_characters = 0;
-int i = 0;
+(void)ac;
+(void)av;
 
+line = NULL;
 write(STDOUT_FILENO, "$ ", 2);
 num_characters = getline(&line, &line_length, stdin);
 if (num_characters == EOF)
