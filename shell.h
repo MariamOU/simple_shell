@@ -10,5 +10,6 @@
 #include<sys/stat.h>
 #include<fcntl.h>
 #include<errno.h>
-
+int getCommand(char* command);
+void executeCommand(const char* command);
 #endif /* SHELL_H */
